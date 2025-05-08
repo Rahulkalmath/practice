@@ -1,23 +1,23 @@
-Pipeline {
+pipeline {
   agent any 
-    environment {
+  environment {
       Name : 'Rahul'
       Lastname : 'K M'
       Age : '27'
   }
-        stages {
-          stage('Build') {
-            steps {
+   stages {
+     stage('Build') {
+        steps {
               echo 'Building'
                   }
-                  stage('test') {
-                    steps {
-                        sh  'echo $Name $Lastname $age' 
-                           }
-                        }
-                    }
-                }
-              }
+     stage('test') {
+         steps {
+             sh  'echo $Name $Lastname $age' 
+                 }
+               }
+             }
+          }
+       }
             
          
               
