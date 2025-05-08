@@ -5,6 +5,7 @@ pipeline {
         Name = "Rahul"
         Lastname = "KM"
         Age = "27"
+        Place = "Harihara"
     }
 
     stages {
@@ -16,7 +17,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo "${env.Name} ${env.Lastname} ${env.Age}"
+                echo "${env.Name} ${env.Lastname} ${env.Age} ${env.Place}"
             }
         }
     }
