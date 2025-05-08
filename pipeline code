@@ -1,9 +1,9 @@
 pipeline {
   agent any 
   environment {
-      Name : 'Rahul'
-      Lastname : 'K M'
-      Age : '27'
+      Name :"Rahul"
+      Lastname :"KM"
+      Age :"27"
   }
    stages {
      stage('Build') {
@@ -12,7 +12,7 @@ pipeline {
                   }
      stage('test') {
          steps {
-             sh  'echo $Name $Lastname $age' 
+             sh  echo "$Name $Lastname $age"
                  }
                }
              }
