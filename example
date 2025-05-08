@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    environment {
+        MY_VAR = "Hello"
+        PATH = "/usr/bin:/usr/local/bin:${env.PATH}"
+    }
+
+    stages {
+        stage('Print Env Var') {
+            steps {
+                echo "MY_VAR is ${env.MY_VAR}"
+            }
+        }
+    }
+}
