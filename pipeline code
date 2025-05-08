@@ -9,14 +9,14 @@ Pipeline {
         steps {
           echo 'Building'
           }
-      stage('test')
+      stage('test') {
         steps {
-          sh  echo $Name, $Lastname $age 
+          sh  echo $Name $Lastname $age 
               }
           }
   }
 }
 }
 }
-
+}
           
